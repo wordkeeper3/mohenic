@@ -1,5 +1,5 @@
 // 엑셀에서 셀 색깔 개수 파악하기
-Function CountColorCells(rng As Range, color As Range) As Long
+Function CountColoredCells(rng As Range, color As Range) As Long
     Dim cell As Range
     Dim count As Long
     count = 0
@@ -8,7 +8,7 @@ Function CountColorCells(rng As Range, color As Range) As Long
             count = count + 1
         End If
     Next cell
-    CountColorCells = count
+    CountColoredCells = count
 End Function
 
 
